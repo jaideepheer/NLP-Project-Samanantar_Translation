@@ -8,6 +8,18 @@ Dataset: https://indicnlp.ai4bharat.org/samanantar/
 
 Corpus: `en-hi (818 MB)`
 
+## Pre-Processing
+
+The training data is pre-processed and cleaned using the following pipeline,
+- Remove HTML code.
+- Make everything lower case.
+- Expand contractions.
+- Remove numbers.
+- Remove stop words.
+- Remove punctuation symbols.
+- Tokenize sentences.
+- Lemmatize sentences.
+
 ## Model
 
 A simple transformer encoder/decoder pair using `torch.nn.TransformerEncoderLayer` and `torch.nn.TransformerDecoderLayer`.
